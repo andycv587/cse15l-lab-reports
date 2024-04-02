@@ -1,6 +1,6 @@
 # cse15l-lab-reports
 
-##Lab Report 1
+## Lab Report 1
 
 ### Command: `cd`
 
