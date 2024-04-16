@@ -92,15 +92,15 @@
 
 #### Q1: On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.
 
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-16%20143153.png?raw=true)
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20143153.png?raw=true)
 
 #### Q2: On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on `ieng6`'s file system).
 
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-16%20143200.png?raw=true)
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20143200.png?raw=true)
 
 #### Q3: A terminal interaction where you log into your `ieng6` account without being asked for a password.
 `ls` with a certain path direct to a file makes it to print out the name and its extension
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-16%20143225.png?raw=true)
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20143225.png?raw=true)
 
 ### Part 3: In 2-3 sentences, describe something you learned from lab in week 2 or 3 that you didn't know before.
 
