@@ -2,7 +2,7 @@
 
 ## Lab Report 2
 
-### ChatServer Webpage
+### Part1: ChatServer Webpage
 
 #### Screenshot #1: 
 ```console
@@ -14,7 +14,7 @@
 ```console
     /add-message?s=How are you&user=yash
 ```
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-16%20130743.png?raw=true)
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20130743.png?raw=true)
 
 #### Code for ChatServer
 ```java
@@ -90,29 +90,18 @@
 
 ### Part 2
 
-#### No Argument
-command `ls` without argument gives me all the files and subfolders within current path
+#### Q1: On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.
+
 <br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20102814.png?raw=true)
 
-#### Argument: Path to a Directory
-Argument to a path to a directory: `ls` with a certain path gives me the files/subfolders under the given path
+#### Q2: On the command line of the `ieng6` machine, run `ls` with the absolute path to the public key for your SSH key for logging into `ieng6` (this is the one you copied to your account on ieng6 using `ssh-copy-id`, so it should be a path on `ieng6`'s file system).
+
 <br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20102920.png?raw=true)
 
-#### Argument: Specific File
+#### Q3: A terminal interaction where you log into your `ieng6` account without being asked for a password.
 `ls` with a certain path direct to a file makes it to print out the name and its extension
 <br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20103037.png?raw=true)
 
-### Command: `cat`
+### Part 3: In 2-3 sentences, describe something you learned from lab in week 2 or 3 that you didn't know before.
 
-#### No Argument
-`cat` without argument gives an empty line, to exit this, I can click on ctrl-z to quit from it
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20103245.png?raw=true)
-
-#### Argument: Path to a Directory
-`cat` with an argument to the directory gives the warning that it is not a file but a directory
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20103348.png?raw=true)
-
-#### Argument: Specific File
-`cat` with an argument of specific file prints the content of that file
-<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-1/Screenshot%202024-04-02%20103424.png?raw=true)
-  
+I learned that
