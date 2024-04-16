@@ -88,7 +88,7 @@
     }
 ```
 
-### Part 2
+### Part 2: Use of private key and public key into server
 
 #### Q1: On the command line of your computer, run `ls` with the absolute path to the private key for your SSH key for logging into `ieng6`.
 
