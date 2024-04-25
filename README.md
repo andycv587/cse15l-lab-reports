@@ -10,6 +10,36 @@
 ```
 <br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20130724.png?raw=true)
 
+##### Q1: Which methods in your code are called?
+
+1. handle(HttpExchange exchange):
+This is the entry point for handling HTTP requests in your ChatHandler class. It's triggered automatically by the HTTP server when a request comes in.
+
+2. handleRequest(URI url):
+This method processes the URI to determine the action to be taken based on the URL path and query parameters.
+
+3. displayChat():
+This method is called to concatenate and return all chat messages stored in the chat history.
+
+##### Q2: What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+
+1. HttpExchange exchange: This argument carries all details of the HTTP request and response. It's used to extract the request URI and send back the HTTP response.
+2. URI url: Derived from exchange.getRequestURI(), it contains the path and the query part of the request URL.
+3. List<String> chatHistory: A field in the ChatHandler class that stores all chat messages. Initially, this list is empty.
+
+
+##### Q3: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+1. Before the Request:
+<br>chatHistory is empty (i.e., chatHistory = []).
+2. Processing the Request:
+<br>The handleRequest method parses the URI to get the path and query.
+<br>It recognizes the path /add-message and proceeds to parse the query s=Hello&user=jpolitz.
+<br>The method extracts the message "Hello" and the user "jpolitz".
+<br>A new chat message is constructed in the format "jpolitz: Hello" and added to chatHistory.
+3. After the Request:
+<br>chatHistory now contains one element: ["jpolitz: Hello"].
+
+
 #### Screenshot #2: 
 ```console
     /add-message?s=How are you&user=yash
