@@ -46,6 +46,37 @@ This method is called to concatenate and return all chat messages stored in the 
 ```
 <br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-2/Screenshot%202024-04-16%20130743.png?raw=true)
 
+##### Q1: Which methods in your code are called?
+
+1. handle(HttpExchange exchange): 
+Extracts the URI from the exchange object.
+Calls handleRequest to process the URI based on the path and query.
+Sends the HTTP response headers and body using the output from handleRequest.
+2. handleRequest(URI url)
+Parses the query string to extract message and user information since the path matches /add-message.
+Constructs a formatted string from the user and message and adds it to chatHistory.
+Calls displayChat to compile and return the full chat history for the response.
+3. displayChat()
+Joins all elements of chatHistory with newline characters to form the complete chat log.
+
+##### Q2: What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+
+1. HttpExchange exchange: Carries the HTTP request and response details. It is used to obtain the request URI and to send back the compiled chat history.
+2. URI url: Derived from exchange.getRequestURI(), it contains the URL path and query, which in this case is /add-message?s=How are you&user=yash.
+3. List<String> chatHistory (Field in ChatHandler):
+<br>Value Before the Request: ["jpolitz: Hello"]
+<br>Value After the Request: ["jpolitz: Hello", "yash: How are you"]
+
+##### Q3: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+<br>chatHistory:
+1. Before the Request: Contains the message ["jpolitz: Hello"].
+2. After Processing the Request:
+<br>The handleRequest method parses the new query string, extracting "How are you" as the message and "yash" as the user.
+<br>Constructs the new string "yash: How are you" and adds it to the chatHistory.
+3. End of Request: chatHistory now contains two items: ["jpolitz: Hello", "yash: How are you"].
+
+
+
 #### Code for ChatServer
 ```java
     import java.io.IOException;
