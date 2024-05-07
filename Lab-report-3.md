@@ -68,6 +68,10 @@ public class ArrayExamples {
 }
 ```
 
+
+
+
+
 #### Briefly describe (2-3 sentences) why the fix addresses the issue.
 
 In the original code, it incorrectly accesses `arr[arr.length - i]`, which would cause exception out of bounds when `i` is `0`. In order to fix this, we can subtract an additional `1` from the index, which ensures it always stay within bounds. This adjustment can target the element at the opposite end of the array segment being swapped, thus correctly reversing the array in place.
