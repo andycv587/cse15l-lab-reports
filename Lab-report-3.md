@@ -29,9 +29,9 @@ import org.junit.Test;
 public class ArrayTests {
     @Test
     public void testReverseInPlaceNoFailure() {
-        int[] original = {1};
+        int[] original = {};
         ArrayExamples.reverseInPlace(original);
-        assertArrayEquals(new int[]{1}, original);
+        assertArrayEquals(new int[]{}, original);
     }
 }
 
@@ -39,6 +39,11 @@ public class ArrayTests {
 
 #### The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
+##### Test that is Not Working
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-3/BuggyNotWorking.png?raw=true)
+
+##### Test that is working
+<br>![Image](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-3/BuggyButWorking.png?raw=true)
 
 
 #### The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
@@ -67,10 +72,6 @@ public class ArrayExamples {
     }
 }
 ```
-
-
-
-
 
 #### Briefly describe (2-3 sentences) why the fix addresses the issue.
 
