@@ -76,3 +76,40 @@ public class ArrayExamples {
 #### Briefly describe (2-3 sentences) why the fix addresses the issue.
 
 In the original code, it incorrectly accesses `arr[arr.length - i]`, which would cause exception out of bounds when `i` is `0`. In order to fix this, we can subtract an additional `1` from the index, which ensures it always stay within bounds. This adjustment can target the element at the opposite end of the array segment being swapped, thus correctly reversing the array in place.
+
+
+### Part 2: Researching Commands
+
+For this task, I would choose the `grep` command, which is a powerful tool used for searching plain-text data sets for lines that match a regular expression. Here are four interesting command-line options for grep:
+
+#### `-r` (or `--recursive`)
+
+##### Example 1:
+
+```
+grep -r "function" ./technical
+```
+
+This command searches recursively for the word "function" within all files under the ./technical directory. It's useful for finding occurrences of the term "function" in any code files, documents, or logs in the directory.
+
+
+##### Example 2:
+
+
+#### `-i` (or `--ignore-case`)
+
+##### Example 1:
+
+##### Example 2:
+
+#### `-v` (or `--invert-match`)
+
+##### Example 1:
+
+##### Example 2:
+
+#### `-l` (or `--files-with-matches`)
+
+##### Example 1:
+
+##### Example 2:
