@@ -2,7 +2,7 @@
 
 ## Step 4: Log into ieng6
 - **Keys Pressed:** `ssh<space>username@ieng6.ucsd.edu<enter>`
-- **Summary:** This command logs you into the ieng6 server using SSH. Replace `username` with our actual username.
+- **Summary:** This command logs you into the ieng6 server using SSH. Replace `username` with your actual username.
 
 ![Screenshot of logging into ieng6](link-to-your-screenshot-1)
 
