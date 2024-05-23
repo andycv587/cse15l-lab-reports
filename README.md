@@ -19,7 +19,7 @@
   2. `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` compiles the Java files.
   3. `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` runs the JUnit tests, showing the initial failing tests.
 
-![Screenshot of running tests](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/2.png?raw=true)
+![Screenshot of running tests](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/3.png?raw=true)
 
 ## Step 7: Edit the code file to fix the failing test
 - **Keys Pressed:** 
@@ -39,7 +39,7 @@
   6. `:%s/temp/index2/g<enter>` replaces all `temp` with `index2`.
   7. `<esc>:wq<enter>` saves and quits vim.
 
-![Screenshot of editing the code](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/3.png?raw=true)
+![Screenshot of editing the code](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/4.png?raw=true)
 
 
 ## Step 8: Run the tests, demonstrating that they now succeed
@@ -48,7 +48,7 @@
   1. `<up><up><up><up><enter>` accesses and reruns the `javac` command from the history to compile the files again.
   2. `<up><up><up><up><enter>` accesses and reruns the `java` command from the history to run the tests again, showing that they now succeed.
 
-![Screenshot of running tests again](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/4.png?raw=true)
+![Screenshot of running tests again](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/5.png?raw=true)
 
 ## Step 9: Commit and push the resulting change to your Github account
 - **Keys Pressed:** `git<space>add<space>ListExamples.java<enter>`, `git<space>commit<space>-m<space>"Fixed<space>index<space>issue"<enter>`, `git<space>push<space>origin<space>main<enter>`
@@ -57,4 +57,4 @@
   2. `git commit -m "Fixed index issue"` commits the changes with a message.
   3. `git push origin main` pushes the changes to your GitHub repository.
 
-![Screenshot of committing and pushing changes](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-5/6.png?raw=true)
+![Screenshot of committing and pushing changes](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/5.png?raw=true)
