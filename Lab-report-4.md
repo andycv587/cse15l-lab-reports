@@ -2,15 +2,15 @@
 
 ## Step 4: Log into ieng6
 - **Keys Pressed:** `ssh<space>username@ieng6.ucsd.edu<enter>`
-- **Summary:** This command logs you into the ieng6 server using SSH. Replace `username` with our actual username.
+- **Summary:** This command logs us into the ieng6 server using SSH. Replace `username` with our school username.
 
-![Screenshot of logging into ieng6](link-to-your-screenshot-1)
+![Screenshot of logging into ieng6](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/0.png?raw=true)
 
-## Step 5: Clone your fork of the repository from your Github account (using the SSH URL)
-- **Keys Pressed:** `git<space>clone<space>git@github.com:yourusername/lab7.git<enter>`
-- **Summary:** This command clones your fork of the lab 7 repository to your local machine. Replace `yourusername` with your actual GitHub username.
+## Step 5: Clone the lab7 repository (using the SSH URL)
+- **Keys Pressed:** `git<space>clone<space>https://github.com/ucsd-cse15l-s24/lab7:username/lab7.git<enter>`
+- **Summary:** This command clones our lab 7 repository Replace `username` with our GitHub username.
 
-![Screenshot of cloning repository](link-to-your-screenshot-2)
+![Screenshot of cloning repository](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/1.png?raw=true)
 
 ## Step 6: Run the tests, demonstrating that they fail
 - **Keys Pressed:** `cd<space>lab7<enter>`, `javac<space>-cp<space>.:<space>lib/hamcrest-core-1.3.jar:<space>lib/junit-4.13.2.jar<space>*.java<enter>`, `java<space>-cp<space>.:<space>lib/hamcrest-core-1.3.jar:<space>lib/junit-4.13.2.jar<space>org.junit.runner.JUnitCore<space>ListExamplesTests<enter>`
@@ -19,17 +19,28 @@
   2. `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` compiles the Java files.
   3. `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` runs the JUnit tests, showing the initial failing tests.
 
-![Screenshot of running tests](link-to-your-screenshot-3)
+![Screenshot of running tests](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/2.png?raw=true)
 
 ## Step 7: Edit the code file to fix the failing test
-- **Keys Pressed:** `vim<space>ListExamples.java<enter>`, `/index1<enter>cwwindex2<esc>:wq<enter>`
+- **Keys Pressed:** 
+  - `vim<space>ListExamples.java<enter>`
+  - `/index1<enter>`
+  - `cwtemp<esc>`
+  - `:%s/index1/index2/g<enter>`
+  - `:%s/index2/index1/g<enter>`
+  - `:%s/temp/index2/g<enter>`
+  - `:wq<enter>`
 - **Summary:** 
   1. `vim ListExamples.java` opens the file in vim.
   2. `/index1` searches for `index1`.
-  3. `cwwindex2` changes `index1` to `index2`.
-  4. `<esc>:wq<enter>` saves and quits vim.
+  3. `cwtemp<esc>` changes the first occurrence of `index1` to `temp`.
+  4. `:%s/index1/index2/g<enter>` replaces all `index1` with `index2`.
+  5. `:%s/index2/index1/g<enter>` replaces all `index2` with `index1`.
+  6. `:%s/temp/index2/g<enter>` replaces all `temp` with `index2`.
+  7. `<esc>:wq<enter>` saves and quits vim.
 
-![Screenshot of editing the code](link-to-your-screenshot-4)
+![Screenshot of editing the code](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/3.png?raw=true)
+
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 - **Keys Pressed:** `<up><up><up><up><enter>`, `<up><up><up><up><enter>`
@@ -37,7 +48,7 @@
   1. `<up><up><up><up><enter>` accesses and reruns the `javac` command from the history to compile the files again.
   2. `<up><up><up><up><enter>` accesses and reruns the `java` command from the history to run the tests again, showing that they now succeed.
 
-![Screenshot of running tests again](link-to-your-screenshot-5)
+![Screenshot of running tests again](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-4/4.png?raw=true)
 
 ## Step 9: Commit and push the resulting change to your Github account
 - **Keys Pressed:** `git<space>add<space>ListExamples.java<enter>`, `git<space>commit<space>-m<space>"Fixed<space>index<space>issue"<enter>`, `git<space>push<space>origin<space>main<enter>`
@@ -46,4 +57,4 @@
   2. `git commit -m "Fixed index issue"` commits the changes with a message.
   3. `git push origin main` pushes the changes to your GitHub repository.
 
-![Screenshot of committing and pushing changes](link-to-your-screenshot-6)
+![Screenshot of committing and pushing changes](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-5/0.png?raw=true)
