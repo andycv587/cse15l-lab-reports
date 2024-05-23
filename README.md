@@ -57,4 +57,4 @@
   2. `git commit -m "Fixed index issue"` commits the changes with a message.
   3. `git push origin main` pushes the changes to your GitHub repository.
 
-![Screenshot of committing and pushing changes](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-5/0.png?raw=true)
+![Screenshot of committing and pushing changes](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-5/6.png?raw=true)
