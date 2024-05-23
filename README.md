@@ -2,13 +2,13 @@
 
 ## Step 4: Log into ieng6
 - **Keys Pressed:** `ssh<space>username@ieng6.ucsd.edu<enter>`
-- **Summary:** This command logs you into the ieng6 server using SSH. Replace `username` with our actual username.
+- **Summary:** This command logs us into the ieng6 server using SSH. Replace `username` with our school username.
 
 ![Screenshot of logging into ieng6](link-to-your-screenshot-1)
 
-## Step 5: Clone your fork of the repository from your Github account (using the SSH URL)
+## Step 5: Clone the lab7 repository (using the SSH URL)
 - **Keys Pressed:** `git<space>clone<space>git@github.com:yourusername/lab7.git<enter>`
-- **Summary:** This command clones your fork of the lab 7 repository to your local machine. Replace `yourusername` with your actual GitHub username.
+- **Summary:** This command clones our lab 7 repository Replace `yourusername` with our GitHub username.
 
 ![Screenshot of cloning repository](link-to-your-screenshot-2)
 
@@ -22,14 +22,25 @@
 ![Screenshot of running tests](link-to-your-screenshot-3)
 
 ## Step 7: Edit the code file to fix the failing test
-- **Keys Pressed:** `vim<space>ListExamples.java<enter>`, `/index1<enter>cwwindex2<esc>:wq<enter>`
+- **Keys Pressed:** 
+  - `vim<space>ListExamples.java<enter>`
+  - `/index1<enter>`
+  - `cwtemp<esc>`
+  - `:%s/index1/index2/g<enter>`
+  - `:%s/index2/index1/g<enter>`
+  - `:%s/temp/index2/g<enter>`
+  - `:wq<enter>`
 - **Summary:** 
   1. `vim ListExamples.java` opens the file in vim.
   2. `/index1` searches for `index1`.
-  3. `cwwindex2` changes `index1` to `index2`.
-  4. `<esc>:wq<enter>` saves and quits vim.
+  3. `cwtemp<esc>` changes the first occurrence of `index1` to `temp`.
+  4. `:%s/index1/index2/g<enter>` replaces all `index1` with `index2`.
+  5. `:%s/index2/index1/g<enter>` replaces all `index2` with `index1`.
+  6. `:%s/temp/index2/g<enter>` replaces all `temp` with `index2`.
+  7. `<esc>:wq<enter>` saves and quits vim.
 
 ![Screenshot of editing the code](link-to-your-screenshot-4)
+
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 - **Keys Pressed:** `<up><up><up><up><enter>`, `<up><up><up><up><enter>`
