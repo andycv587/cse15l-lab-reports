@@ -31,7 +31,7 @@ ls -l
 
 ![Screenshot of Terminal Output](https://github.com/andycv587/cse15l-lab-reports/blob/main/lab-report-5/2.png?raw=true)
 
-Thank you for the suggestion. It looks like the files are all in the same directory. However, I noticed something odd in my Java file. Here's the content of Line Counter.java:
+Thank you for the suggestion. It looks like the files are all in the same directory. However, I noticed something odd in my Java file. Here's the content of `Line Counter.java`:
 
 ```java
 //created by User: andys
